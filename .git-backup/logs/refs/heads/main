@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 0f335bae12cce2f81a456f15ccd9bbf41d713402 ismaeelaljanubi <ismaeelalkanaan@gmail.com> 1778241025 +0300	commit (initial): Fix: remove nested .git from frontend and re-add correctly
+0f335bae12cce2f81a456f15ccd9bbf41d713402 98cc67012e8ee78310b75bae99b13c5e1313090c ismaeelaljanubi <ismaeelalkanaan@gmail.com> 1778241749 +0300	commit: Clean commit: ignore pycache, env, venv, node_modules
+98cc67012e8ee78310b75bae99b13c5e1313090c 98cc67012e8ee78310b75bae99b13c5e1313090c ismaeelaljanubi <ismaeelalkanaan@gmail.com> 1778241993 +0300	Branch: renamed refs/heads/master to refs/heads/main
+98cc67012e8ee78310b75bae99b13c5e1313090c 346e55841161fc53b1e349ed418df62d2ea57dd4 ismaeelaljanubi <ismaeelalkanaan@gmail.com> 1778243510 +0300	commit: Remove hardcoded API keys from settings.py

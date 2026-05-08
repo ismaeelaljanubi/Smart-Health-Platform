@@ -1,0 +1,154 @@
+.medical-record-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 15px 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+.medical-record-grid .form-group {
+  display: contents; /* Makes children participate directly in the grid */
+}
+
+.medical-record-grid label {
+  grid-column: 1;
+  text-align: right;
+  padding-top: 8px; /* Align label with input */
+  font-weight: bold;
+  color: #333;
+}
+
+.medical-record-grid .form-group > *:not(label) {
+  grid-column: 2;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.medical-record-grid textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.record-form .form-actions {
+  grid-column: 1 / -1; /* Span across all columns in the grid */
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* General styling for the container and elements */
+.add-record-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.add-record-container h2 {
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+.patient-info-card {
+  background-color: #e6f7ff;
+  border-left: 5px solid #007bff;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.patient-info-card h3 {
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.patient-info-card p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.success-message {
+  color: #28a745;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #5a6268;
+}
+
+.btn-save {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.btn-save:hover {
+  background-color: #0056b3;
+}
+
+.btn-save:disabled {
+  background-color: #a0c9f1;
+  cursor: not-allowed;
+}
+
+/* Ensure textareas and selects have proper styling */
+textarea, select {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+/* Basic reset for form elements */
+input, textarea, select, button {
+  font-family: 'Arial', sans-serif; /* Or your preferred font */
+  font-size: 1rem;
+}
+
+/* Adjust padding for selects */
+select {
+  padding: 8px 10px;
+}

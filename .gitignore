@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Database
+db.sqlite3
+*.sqlite3
+
+# Environment & secrets
+.env
+data.json
+
+# Frontend (نمنع رفع node_modules فقط)
+frontend/node_modules/
+frontend/.env
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+*.log
